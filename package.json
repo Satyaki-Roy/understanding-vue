@@ -1,0 +1,22 @@
+{
+  "name": "understanding-vue",
+  "version": "1.0.0",
+  "description": "Learning Vue.JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyaki-Roy/understanding-vue.git"
+  },
+  "author": "Satyaki Roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satyaki-Roy/understanding-vue/issues"
+  },
+  "homepage": "https://github.com/Satyaki-Roy/understanding-vue#readme",
+  "dependencies": {
+    "prettier": "^2.1.2"
+  }
+}
