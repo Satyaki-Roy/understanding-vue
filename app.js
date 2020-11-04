@@ -1,43 +1,28 @@
 const app = Vue.createApp({
   data() {
     return {
-      currentUserInput: "",
-      message: "Vue is great!",
+      detailsAreVisible: false,
+      friends: [
+        {
+          id: "manuel",
+          name: "Manuel Lorenz",
+          phone: "01234 5678 991",
+          email: "manuel@localhost.com",
+        },
+        {
+          id: "julie",
+          name: "Julie Jones",
+          phone: "09876 543 221",
+          email: "manuel@localhost.com",
+        },
+      ],
     };
   },
   methods: {
-    setText() {
-      this.message = this.$refs.textValue.value;
+    showDetails() {
+      this.detailsAreVisible = !this.detailsAreVisible;
     },
-  },
-  beforeCreate() {
-    console.log("beforeCreate()");
-  },
-  created() {
-    console.log("created()");
-  },
-  beforeMount() {
-    console.log("beforeMount()");
-  },
-  mounted() {
-    console.log("mounted()");
-  },
-  beforeUpdate() {
-    console.log("beforeUpdate()");
-  },
-  updated() {
-    console.log("updated()");
-  },
-  beforeUnmount() {
-    console.log("beforeUnmount()");
-  },
-  unmounted() {
-    console.log("unmounted()");
   },
 });
 
 app.mount("#app");
-
-setTimeout(() => {
-  app.unmount();
-}, 3000);
